@@ -74,7 +74,7 @@ pipeline {
        
        stage('push') {
             steps {
-                sh 'docker login -u rakibrifat -p 106612rifat'
+                sh 'docker login -u yourusername -p yourpassword'
                 sh 'docker push $repo'
             }
         }
