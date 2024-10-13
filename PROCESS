@@ -57,28 +57,29 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git 'https://github.com/RAHAMSHAIK007/dockernewproject.git'
+                git 'https://github.com/VOID-121/dockernewproject.git'
             }
         }
+       
         stage('build') {
             steps {
                 sh 'docker build -t $img .'
             }
         }
-        stage('tag') {
+         stage('tag') {
             steps {
                 sh 'docker tag $img $repo'
             }
         }
-        stage('push') {
+       
+       stage('push') {
             steps {
-                sh 'docker login -u  -p '
+                sh 'docker login -u rakibrifat -p 106612rifat'
                 sh 'docker push $repo'
             }
         }
     }
 }
-
 
 4. GIVE PERMISSIONS
 
@@ -89,40 +90,24 @@ systemctl restart docker.service
 
 5. WRITE COMPOSE FILE AND PUSH TO GITHUB
 
-version: '3'
+version: '3.8'
 services:
-  devops:
-    image: rahamshaik/devopsreponit:latest
-    ports:
-      - "80:80"
-    volumes:
-      - "devopsvol"
-    deploy:
-      replicas: 3
-
-  aws:
-    image: rahamshaik/awsreponit:latest
+  admin:
+    image: rakibrifat/admin:latest
     ports:
       - "81:80"
-    volumes:
-      - "awsvol"
     deploy:
       replicas: 3
-
-  datascience:
-    image: rahamshaik/datasciencereponit:latest
+  superuser:
+    image: rakibrifat/superuser:latest
     ports:
       - "82:80"
-    volumes:
-      - "datasciencevol"
     deploy:
       replicas: 3
-
-  azure:
-    image: rahamshaik/azurereponit:latest
+  normaluser:
+    image: rakibrifat/normaluser:latest
     ports:
       - "83:80"
-    volumes:
-      - "azurevol"
     deploy:
       replicas: 3
+  
