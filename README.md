@@ -1,6 +1,9 @@
 # Complete CI/CD  pipleine Project Using Jenkins , Docker, Docker Compose ,Docker Swarm, AWS 
 ### setup & set 
 ```bash
+You can find all the setup Process on Process file . Do it from here and then check!!!!!
+```
+```bash
 1.Admin deploy
 ```
  
@@ -32,7 +35,7 @@ Pipeline code for Deploy . You can also get it from Deploy File As Well
 ```
 ![Screenshot 2024-10-13 143031](https://github.com/user-attachments/assets/f8269cdb-d94e-4750-aca7-d35b6450867f)
 ```bash
-Stage view of CI/CD pipepline for Checkout from github. build ,test,image creation and push on Docker HUb
+Stage view of CI/CD pipepline for Checkout from github, Build ,test,image creation and push on Docker HUb
 ```
 ![Screenshot 2024-10-13 143139](https://github.com/user-attachments/assets/906c93f4-b786-459d-a679-e504b7429771)
 ![Screenshot 2024-10-13 143205](https://github.com/user-attachments/assets/8b2993b8-bf3b-4245-970f-4e4afde576b2)
