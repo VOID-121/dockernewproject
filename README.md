@@ -1,5 +1,4 @@
 #Complete CI/CD  pipleine Project Using Jenkins , Docker, Docker Compose ,Docker Swarm, AWS  
-![Screenshot 2024-10-10 012936](https://github.com/user-attachments/assets/a243c975-b861-4759-80ea-2050d61fcccd)
 ![Screenshot 2024-10-13 142318](https://github.com/user-attachments/assets/94bea43c-c8d4-40a8-bd12-2e94a232ffe3)
 ![Screenshot 2024-10-13 142344](https://github.com/user-attachments/assets/d407aceb-43c3-40a3-810b-c96c7aa31ca8)
 ![Screenshot 2024-10-13 142407](https://github.com/user-attachments/assets/a9591b48-beaa-4916-a8d8-3fe7a4730582)
