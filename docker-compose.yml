@@ -1,26 +1,21 @@
 version: '3.8'
 services:
-  movies:
-    image: hpakala53/paytmmovies:latest
+  admin:
+    image: rakibrifat/admin:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
-  train:
-    image: hpakala53/paytmtrain:latest
+  superuser:
+    image: rakibrifat/superuser:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
-  dth:
-    image: hpakala53/paytmdth:latest
+  normaluser:
+    image: rakibrifat/normaluser:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
-  recharge:
-    image: hpakala53/paytmrecharge:latest
-    ports:
-      - "84:80"
-    deploy:
-      replicas: 3
+  
